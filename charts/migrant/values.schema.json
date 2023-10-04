@@ -21,43 +21,6 @@
                     "default": {},
                     "title": "The env Schema",
                     "required": [],
-                    "properties": {
-                        "DB_HOST": {
-                            "type": "string",
-                            "title": "The DB_HOST Schema",
-                            "examples": [
-                                "postgresql-postgresql.devtroncd"
-                            ]
-                        },
-                        "DB_PASSWORD": {
-                            "type": "string",
-                            "title": "The DB_PASSWORD Schema",
-                            "examples": [
-                                ""
-                            ]
-                        },
-                        "DB_PORT": {
-                            "type": "string",
-                            "title": "The DB_PORT Schema",
-                            "examples": [
-                                "1234"
-                            ]
-                        },
-                        "DB_TYPE": {
-                            "type": "string",
-                            "title": "The DB_TYPE Schema",
-                            "examples": [
-                                "postgres"
-                            ]
-                        },
-                        "DB_USER": {
-                            "type": "string",
-                            "title": "The DB_USER Schema",
-                            "examples": [
-                                "postgres"
-                            ]
-                        }
-                    },
                     "examples": [
                         {
                             "DB_HOST": "postgresql-postgresql.devtroncd",
@@ -154,65 +117,6 @@
                             "REPO_NAME",
                             "DB_NAME"
                         ],
-                        "properties": {
-                            "REPO_URL": {
-                                "type": "string",
-                                "title": "The REPO_URL Schema",
-                                "examples": [
-                                    "https://github.com/devtron-labs/devtron"
-                                ]
-                            },
-                            "REPO_NAME": {
-                                "type": "string",
-                                "title": "The REPO_NAME Schema",
-                                "examples": [
-                                    "devtron"
-                                ]
-                            },
-                            "BRANCH": {
-                                "type": "string",
-                                "title": "The BRANCH Schema",
-                                "examples": [
-                                    "main"
-                                ]
-                            },
-                            "COMMIT": {
-                                "type": "string",
-                                "title": "The COMMIT Schema",
-                                "examples": [
-                                    ""
-                                ]
-                            },
-                            "SCRIPT_LOCATION": {
-                                "type": "string",
-                                "title": "The SCRIPT_LOCATION Schema",
-                                "examples": [
-                                    "scripts/sql/"
-                                ]
-                            },
-                            "PARAM": {
-                                "type": "string",
-                                "title": "The PARAM Schema",
-                                "examples": [
-                                    "sslmode=disable"
-                                ]
-                            },
-                            "MIGRATE_TO_VERSION": {
-                                "type": "string",
-                                "default": "0",
-                                "title": "The MIGRATE_TO_VERSION Schema",
-                                "examples": [
-                                    "0"
-                                ]
-                            },
-                            "DB_NAME": {
-                                "type": "string",
-                                "title": "The DB_NAME Schema",
-                                "examples": [
-                                    "orchestrator"
-                                ]
-                            }
-                        },
                         "examples": [
                             {
                                 "REPO_URL": "https://github.com/devtron-labs/devtron",
