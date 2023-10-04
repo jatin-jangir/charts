@@ -20,15 +20,10 @@
                     "type": "object",
                     "default": {},
                     "title": "The env Schema",
-                    "required": [
-                        "DB_HOST",
-                        "DB_PORT",
-                        "DB_TYPE"
-                    ],
+                    "required": [],
                     "properties": {
                         "DB_HOST": {
                             "type": "string",
-                            "default": "",
                             "title": "The DB_HOST Schema",
                             "examples": [
                                 "postgresql-postgresql.devtroncd"
@@ -36,7 +31,6 @@
                         },
                         "DB_PASSWORD": {
                             "type": "string",
-                            "default": "",
                             "title": "The DB_PASSWORD Schema",
                             "examples": [
                                 ""
@@ -44,7 +38,6 @@
                         },
                         "DB_PORT": {
                             "type": "string",
-                            "default": "",
                             "title": "The DB_PORT Schema",
                             "examples": [
                                 "1234"
@@ -52,7 +45,6 @@
                         },
                         "DB_TYPE": {
                             "type": "string",
-                            "default": "",
                             "title": "The DB_TYPE Schema",
                             "examples": [
                                 "postgres"
@@ -60,7 +52,6 @@
                         },
                         "DB_USER": {
                             "type": "string",
-                            "default": "",
                             "title": "The DB_USER Schema",
                             "examples": [
                                 "postgres"
@@ -88,7 +79,6 @@
                             "title": "The secret Schema",
                             "items": {
                                 "type": "string",
-                                "default": "",
                                 "title": "A Schema",
                                 "examples": [
                                     "db-secret"
@@ -128,7 +118,7 @@
         },
         "image": {
             "type": "string",
-            "default": "",
+            "default": "migrate/migrate",
             "title": "The image Schema",
             "examples": [
                 "migrate/migrate"
@@ -167,7 +157,6 @@
                         "properties": {
                             "REPO_URL": {
                                 "type": "string",
-                                "default": "",
                                 "title": "The REPO_URL Schema",
                                 "examples": [
                                     "https://github.com/devtron-labs/devtron"
@@ -175,7 +164,6 @@
                             },
                             "REPO_NAME": {
                                 "type": "string",
-                                "default": "",
                                 "title": "The REPO_NAME Schema",
                                 "examples": [
                                     "devtron"
@@ -183,7 +171,6 @@
                             },
                             "BRANCH": {
                                 "type": "string",
-                                "default": "",
                                 "title": "The BRANCH Schema",
                                 "examples": [
                                     "main"
@@ -191,7 +178,6 @@
                             },
                             "COMMIT": {
                                 "type": "string",
-                                "default": "",
                                 "title": "The COMMIT Schema",
                                 "examples": [
                                     ""
@@ -199,7 +185,6 @@
                             },
                             "SCRIPT_LOCATION": {
                                 "type": "string",
-                                "default": "",
                                 "title": "The SCRIPT_LOCATION Schema",
                                 "examples": [
                                     "scripts/sql/"
@@ -207,7 +192,6 @@
                             },
                             "PARAM": {
                                 "type": "string",
-                                "default": "",
                                 "title": "The PARAM Schema",
                                 "examples": [
                                     "sslmode=disable"
@@ -215,7 +199,7 @@
                             },
                             "MIGRATE_TO_VERSION": {
                                 "type": "string",
-                                "default": "",
+                                "default": "0",
                                 "title": "The MIGRATE_TO_VERSION Schema",
                                 "examples": [
                                     "0"
@@ -223,7 +207,6 @@
                             },
                             "DB_NAME": {
                                 "type": "string",
-                                "default": "",
                                 "title": "The DB_NAME Schema",
                                 "examples": [
                                     "orchestrator"
